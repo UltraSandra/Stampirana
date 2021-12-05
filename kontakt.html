@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/stil.css">
+    <link rel="stylesheet" href="css/kontakt.css">
+    <link rel="shortcut icon" href="slike/pirana.png">
+    <script src="js/index.js"></script>
+    <script src="js/jquery-3.6.0.js"></script>
+
+    <title>Štampirana - 3D print</title>
+</head>
+<body>
+    <header>
+        <div class="omotac">
+            <a href="index.html" > <img src="slike/pirana.png" alt="logo" class="levaPirana"></a>
+           <div class="burger"><img src="slike/burgermeni.png" alt="burgermeni"></div>
+           
+            <nav>
+                <ul>
+                    <li id="iks"><div class="iks"><img src="slike/iks.png" alt="iks"></div></li>
+                    <li><a href="index.html">Početna</a></li>
+                    <li><a href="index.html#onama">O nama</a></li>
+                    <li><a href="index.html#galerija">Galerija</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                     
+                </ul>
+            </nav>
+            <script src="js/meni.js"></script>
+            <a href="index.html" ><img src="slike/pirana.png" alt="logo2" class="desnaPirana"></a>
+        </div>
+    </header>
+
+    <div id="kontakt">
+        <div class="obrazac">
+            <div class="stampiranaKontakt">
+                <div class="stampiranaKontaktLevo"><p> <span>Kontakt telefon:</span>  0638909858</p>
+                    <p><span>Email:</span>  stampirana@gmail.com</p>
+                    <p> <span>Facebook:</span>  Štampirana 3D-print</p>
+                </div>
+              
+             <div class="stampiranaKontaktDesno">
+                 <img src="slike/pirana.png" alt="logo">
+              
+             </div>   
+            </div>  
+            <form action="kontakt.php" method="POST">
+                <div class="formular">
+                    <div class="podaci">
+                        <fieldset>
+                            <label>Ime <input type="text" name="ime" required autofocus></label>
+                            <label>Prezime <input type="text" name="prezime" required></label>
+                            <label> Email <input type="email" id="email" name="email" required></label>
+                            <label>Adresa  <input type="text" name="adresa" required></label>
+                            <label>Telefon <input type="tel" name="telefon" required></label>
+                            <label>  
+                            <textarea name="textarea" id="pitanja" cols="30" rows="10" placeholder="Ovde napišite šta je potrebno štampati i kojih dimenzija" required></textarea>
+                            </label>
+                            <label> Ubacite fajl <input type="file" id="fajl" name="fajl" required> </label>
+                        </fieldset>
+                    </div>
+
+                    <div class="stampa">
+                        <fieldset>
+                            <label> Izaberite boju <input type="color" id="boja" value="#c25309"></label>
+                            
+                            <div><p>Vrsta boje:</p>
+                                <label for="sjajno"><input type="radio" id="sjajno" name="plastika" value="sjajno"  checked>Sjajno</label>
+                                <label for="mat"><input type="radio" id="mat" name="plastika" value="mat">Mat</label>
+                                <label for="fosforescentno"><input type="radio" id="fosforescentno" name="plastika" value="fosforescentno">Fosforno</label>
+                            </div>
+                            
+                            <div><p>Vrsta plastike:</p>
+                                <label for="pla"><input type="radio" id="pla" name="materijal" value="pla" checked>PLA</label>
+                                <label for="pla+"><input type="radio" id="pla+" name="materijal" value="pla+">PLA+</label>
+                                <label for="abs"><input type="radio" id="abs" name="materijal" value="abs" >ABS</label>
+                            </div>
+
+                            <input id="submit" type="submit" value="Naruči">
+                            <script src="js/narucivanje.js"></script>
+                        </fieldset>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+
+    </div> 
+
+    <footer class="kontakt">
+        <a href="#" class="fejsbuk hide">Facebook</a>
+        <a href="#" class="instagram hide">Instagram</a>
+        <a href="#" class="linked hide">LinkedIn</a>
+        <a href="#" class="mail hide">Mail</a>
+</footer>
+</body>
+</html>
